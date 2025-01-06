@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Belleza&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --colorlavender: #cdb4db;
+    --roselight: #ffc8dd;
+    --rosedark: #ffafcc;
+    --bluelight: #bde0fe;
+    --bluedark: #a2d2ff;
+}
+body{
+    font-family: "Afacad Flux", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+h1 {
+    font-size: 2.5rem; /* 40px */
+}    
+h2 {
+    font-size: 2rem; /* 32px */
+}
+p, label, input {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5; /* 24px line height */
+}
+input{
+    line-height: normal;
+}
+.introimg img{
+    height: auto;
+    width: 100%;  
+    display: block;      
+}
+.introduction{
+    background-color: var(--colorlavender);
+    padding: 30px 10px;
+}
+.introduction p{
+    margin: 10px 0;
+}
+.uiImages{
+    background-color: var(--bluedark);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.uiImages div{
+    height: auto;
+    width: 50%;
+}
+.uiImages > div:nth-child(1), .uiImages > div:nth-child(2){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.uiImages > div:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1585229259255-9f0816d671a3?q=80&w=1954&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.uiImages > div:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1618788372246-79faff0c3742?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: 120%;
+}
+.whySubscribe{
+    padding: 10px;
+    background-color: var(--roselight);
+}
+.reasons{
+    background-color: var(--rosedark);
+    padding: 30px 10px;
+    width: 100%;
+}
+.reasons .reasonCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reasonIcon{
+    align-self: center;
+    justify-self: center;
+}
+.reasons .reasonCard .reasonIcon img{
+    height: auto;
+    width: 30px;
+}
+.reasons .reasonCard .reasonText p{
+    text-align: right;
+}
+.reasonCard{
+    margin: 10px 0;
+}
+.RegisterNow{
+    background-color: var(--bluelight);
+    text-align: center;
+}
+.RegisterNowForm{
+    background-color: var(--bluedark);
+    padding: 30px 10px;
+}
+input:not([type="checkbox"], [type="radio"]), select, textarea{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+input:focus{
+    border-color: var(--rosedark);
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2); 
+    outline: none; 
+}
+.bd:not(button[class="bd"]){
+    font-weight: bold;
+}
+form div{
+    margin: 1rem 0;
+}
+select option{
+    background-color: var(--colorlavender);
+    color: black;
+}
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+input[type="radio"] + label::before{
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #000000; 
+    margin-right: 5px;
+    vertical-align: middle;
+}
+input[type="radio"] + label::before {
+    border-radius: 50%; 
+}
+input[type="radio"] + label{
+    text-align: center;
+    vertical-align: middle;
+}
+input[type="radio"]:checked + label::before {
+    background-color: var(--rosedark); 
+    border-color: var(--colorlavender);
+}
+input[type="checkbox"] + label{
+    vertical-align: middle;
+    text-align: center;
+}
+form button{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--rosedark);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footer{
+    background-color: var(--colorlavender);
+}
+.footer p{
+    font-size: 0.8rem;
+}
+
+/*Medium Mobile Screen*/
+@media screen and (min-width: 321px) and (max-width: 376px) {
+    .introimg img{
+        height: auto;     
+    }
+    .introduction{
+        padding: 35px 13px;
+    }
+    .whySubscribe{
+        padding: 13px;
+    }
+    .reasons{
+        padding: 35px 13px;
+    }
+    .RegisterNowForm{
+        padding: 30px 13px;
+    }
+    input:not([type="checkbox"], [type="radio"]), select, textarea{
+        padding: 7px 12px;
+    }
+}
+
+/*Large Mobile Screen*/
+@media screen and (min-width: 376px) and (max-width: 426px) {
+    .introimg img{
+        height: auto;     
+    }
+    .introduction{
+        padding: 35px 16px;
+    }
+    .whySubscribe{
+        padding: 16px;
+    }
+    .reasons{
+        padding: 35px 16px;
+    }
+    .RegisterNowForm{
+        padding: 20px 16px;
+    }
+    .reasons .reasonCard .reasonIcon img{
+        height: auto;
+        width: 40px;
+    }
+    .footer p{
+        font-size: 1rem;
+    }
+    input:not([type="checkbox"], [type="radio"]), select, textarea{
+        padding: 6px 15px;
+    }
+    body{
+        background-color: var(--rosedark);
+    }
+    input[type="checkbox"]{
+        vertical-align: middle;
+    }
+}
+
+/*Tablet Screen*/
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    html {
+        font-size: 16px; /* 1rem = 18px */
+    }
+    h1 {
+        font-size: 3rem; /* 54px */
+    }
+    h2 {
+        font-size: 2.5rem; /* 45px */
+    }
+    p, label, input {
+        font-size: 1.125rem; /* 20.25px */
+    }
+    body{
+        background-color: var(--rosedark);
+    }
+    .introimg img{
+        height: auto;     
+    }
+    .introduction{
+        padding: 50px;
+    }
+    .whySubscribe{
+        padding: 18px 18px 18px 40px;
+    }
+    .reasons{
+        padding: 40px 18px;
+    }
+    .RegisterNowForm{
+        padding: 30px 18px;
+    }
+    .uiImages{
+        height: 450px;
+    }
+    .reasons, .RegisterNowForm form{
+        max-width: 500px;
+        margin: auto;
+    }
+    .reasons .reasonCard .reasonIcon img{
+        height: auto;
+        width: 50px;
+    }
+    .footer p{
+        font-size: 1.1rem;
+    }
+    input:not([type="checkbox"], [type="radio"]), select, textarea{
+        padding: 8px 18px;
+    }
+    input[type="checkbox"]{
+        zoom: 1.2;
+        vertical-align: middle;
+    }
+}
+
+/*Laptop Screen*/
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    html {
+        font-size: 18px; /* 1rem = 20px */
+    }
+    h1 {
+        font-size: 3.5rem; /* 70px */
+    }
+    h2 {
+        font-size: 3rem; /* 60px */
+    }
+    p, label, input {
+        font-size: 1.25rem; /* 25px */
+    }
+    input, select{
+        font-size: 1rem;
+    }
+    body{
+        background-color: var(--rosedark);
+    }
+    .introimg img{
+        height: auto;     
+    }
+    .introduction{
+        padding: 70px;
+    }
+    .whySubscribe{
+        padding: 22px 22px 22px 70px;
+    }
+    .reasons{
+        padding: 70px 22px;
+    }
+    .RegisterNowForm{
+        padding: 40px 22px;
+    }
+    .uiImages{
+        height: 550px;
+    }
+    .reasons, .RegisterNowForm form{
+        max-width: 600px;
+        margin: auto;
+    }
+    .reasons .reasonCard .reasonIcon img{
+        height: auto;
+        width: 55px;
+    }
+    .footer p{
+        font-size: 1.2rem;
+    }
+    input:not([type="checkbox"], [type="radio"]), select, textarea{
+        padding: 10px 21px;
+    }
+    input[type="checkbox"]{
+        zoom: 1.3;
+        vertical-align: middle;
+    }
+}
+
+/*Large Laptop Screen*/
+@media screen and (min-width:1025px) and (max-width: 1441px) {
+    html {
+        font-size: 19px; /* 1rem = 20px */
+    }
+    h1 {
+        font-size: 3.5rem; /* 70px */
+    }
+    h2 {
+        font-size: 3rem; /* 60px */
+    }
+    p, label, input {
+        font-size: 1.25rem; /* 25px */
+    }
+    input, select{
+        font-size: 1rem;
+    }
+    body{
+        background-color: var(--rosedark);
+    }
+    .introimg img{
+        height: auto;     
+    }
+    .introduction{
+        padding: 90px;
+    }
+    .whySubscribe{
+        padding: 26px 26px 26px 90px;
+    }
+    .reasons{
+        padding: 90px 26px;
+    }
+    .RegisterNowForm{
+        padding: 40px 26px;
+    }
+    .uiImages{
+        height: 650px;
+    }
+    .reasons, .RegisterNowForm form{
+        max-width: 700px;
+        margin: auto;
+    }
+    .reasons .reasonCard .reasonIcon img{
+        height: auto;
+        width: 60px;
+    }
+    .footer p{
+        font-size: 1.3rem;
+    }
+    input:not([type="checkbox"], [type="radio"]), select, textarea{
+        padding: 12px 23px;
+    }
+    input[type="checkbox"]{
+        zoom: 1.5;
+        vertical-align: middle;
+    }
+}
+
+/*Desktop Screen*/
+@media screen and (min-width:1441px) and (max-width: 2561px) {
+    html {
+        font-size: 22px; /* 1rem = 20px */
+    }
+    h1 {
+        font-size: 3.5rem; /* 70px */
+    }
+    h2 {
+        font-size: 3rem; /* 60px */
+    }
+    p, label, input, select {
+        font-size: 1.25rem; /* 25px */
+    }
+    body{
+        background-color: var(--rosedark);
+    }
+    .introimg img{
+        height: auto;     
+    }
+    .introduction{
+        padding: 110px;
+    }
+    .whySubscribe{
+        padding: 30px 30px 30px 110px;
+    }
+    .reasons{
+        padding: 110px 30px;
+    }
+    .RegisterNowForm{
+        padding: 40px 30px;
+    }
+    .uiImages{
+        height: 1500px;
+    }
+    .reasons, .RegisterNowForm form{
+        max-width: 700px;
+        margin: auto;
+    }
+    .reasons .reasonCard .reasonIcon img{
+        height: auto;
+        width: 65px;
+    }
+    .footer p{
+        font-size: 1.2rem;
+    }
+    input:not([type="checkbox"], [type="radio"]), select, textarea{
+        padding: 15px 25px;
+    }
+    input[type="checkbox"]{
+        zoom: 1.7;
+        vertical-align: middle;
+    }
+}

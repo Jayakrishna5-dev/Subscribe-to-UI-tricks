@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UI Design Daily Tips Subscription</title>
+</head>
+
+<body>
+    <header>
+        <div class="introimg">
+            <img src="https://images.unsplash.com/photo-1641630377246-80e94e73c0cd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="ui sketch on Tablet and coffee on table">
+        </div>
+        <div class="introduction">
+            <h1>Subscribe to Daily <u>UI Design</u> Tips</h1>
+            <p>Enhance your UI skills with a daily dose of expert tips straight to your inbox.</p>
+        </div>
+    </header>
+    <section class="uiImages">
+        <div></div>
+        <div></div>
+    </section>
+    <section class="whySubscribe">
+        <h2>Why Subscribe?</h2>
+    </section>
+    <section class="reasons">
+        <div class="reasonCard">
+            <div class="reasonIcon">
+                <img src="https://img.icons8.com/?size=100&id=PqkyeM58JqJr&format=png&color=000000" alt="tip icon">
+            </div>
+            <div class="reasonText">
+                <p>Receive practical UI design tips daily.</p>
+            </div>
+        </div>
+        <div class="reasonCard">
+            <div class="reasonIcon">
+                <img src="https://img.icons8.com/?size=100&id=85160&format=png&color=000000" alt="latest icon">
+            </div>
+            <div class="reasonText">
+                <p>Stay updated with the latest UI design trends.</p>
+            </div>
+        </div>
+        <div class="reasonCard">
+            <div class="reasonIcon">
+                <img src="https://img.icons8.com/?size=100&id=xYlFNxNeJAzA&format=png&color=000000" alt="skill icon">
+            </div>
+            <div class="reasonText">
+                <p>Improve your design skills effortlessly over time.</p>
+            </div>
+        </div>
+    </section>
+    <section class="whySubscribe RegisterNow">
+        <h2>Register Now</h2>
+    </section>
+    <section class="RegisterNowForm">
+        <form action="/submit-form" method="POST">
+            <div>
+                <label class="bd" for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label class="bd" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label class="bd" for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div>
+                <label class="bd" for="role">Current Working Role</label>
+                <input type="text" id="role" name="role">
+            </div>
+            <div>
+                <label class="bd">How did you hear about us?</label><br>
+                <input type="radio" id="social_media" name="source" value="Social Media" checked>
+                <label for="social_media">Social Media</label><br>
+                <input type="radio" id="search_engine" name="source" value="Search Engine">
+                <label for="search_engine">Search Engine</label><br>
+                <input type="radio" id="friend" name="source" value="Friend">
+                <label for="friend">Friend</label><br>
+                <input type="radio" id="other" name="source" value="Other">
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <label class="bd" for="reason">Why did you choose UI learning path?</label>
+                <select id="reason" name="reason">
+                    <option value="career">To advance my career</option>
+                    <option value="interest">Personal interest</option>
+                    <option value="skill_up">To acquire a new skill</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="check">
+                <label class="bd">What kind of updates would you like related to UI design?</label><br>
+                <input type="checkbox" id="trends" name="updates" value="Trends">
+                <label for="trends">Trends</label><br>
+                <input type="checkbox" id="tutorials" name="updates" value="Tutorials">
+                <label for="tutorials">Tutorials</label><br>
+                <input type="checkbox" id="resources" name="updates" value="Resources">
+                <label for="resources">Resources</label><br>
+                <input type="checkbox" id="all" name="updates" value="All" checked>
+                <label for="all">All of the above</label>
+            </div>
+            <div>
+                <label class="bd" for="comments">Comments or Suggestions</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <button class="bd" type="submit">Subscribe</button>
+        </form>
+    </section>
+    <footer class="whySubscribe footer">
+        <p>&copy; 2025 UI Design Daily Tips. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
